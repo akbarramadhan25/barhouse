@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Britz Top Residence</title>
+    <!-- Ubuntu -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@400;600&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Feather Icon -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+        tailwind.config = {
+            darkMode : 'class',
+            theme: {
+                extend : {
+                    colors : {
+                        primary : '#14b8a6'
+                    },
+                    fontFamily : {
+                        Ubuntu : ['Ubuntu']
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        button .hamburger-line {
+            display: block;
+            width: 30px;
+            height: 2px;
+            margin-top: 8px;
+            line-height: 5;
+        }
+        .hamburger-active > span:nth-child(1) {
+            @apply rotate-45;
+        }
+        .hamburger-active > span:nth-child(3) {
+            @apply -rotate-45;
+        }
+        .hamburger-active > span:nth-child(2) {
+            @apply scale-0
+        }
+        .navbar-fixed {
+            @apply fixed z-[9999];
+            backdrop-filter: blur(5px);
+            box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.1);
+            
+        }
+    </style>
+</head>
+<body>
+    <nav id="nav" class="w-full bg-slate-200 flex justify-between items-center h-16 ">
+        <div class="title">
+            <h1 class="font-semibold p-4 text-sm md:text-lg">BAR HOUSE</h1>
+        </div>
+        <div class="flex items-center">
+            <button id="hamburger" class="block absolute right-4 md:hidden">
+                <span class="hamburger-line origin-top-left transition duration-100" style="background-color: white;"></span>
+                <span class="hamburger-line transition duration-100" style="background-color: white;"></span>
+                <span class="hamburger-line origin-bottom-left transition duration-100" style="background-color: white;"></span>
+            </button>          
+            <ul id="nav-menu" class=" md:flex hidden z-[9999] bg-slate-200 mt-[16rem] md:mt-0 mr-7 rounded-md" id="menuList">
+                <li class="group-flex"><a href="/index.html" class="text-base text-slate-900 hover:text-white transition-all duration-100 px-4" style="line-height: 3;">Home</a></li>
+                <li class="group-flex"><a href="/index.html" class="text-base px-4 text-slate-900 hover:text-white transition-all duration-100" style="line-height: 3;">Layanan</a></li>
+                <li class="group-flex"><a href="/index.html" class="text-base px-4 text-slate-900 hover:text-white transition-all duration-100" style="line-height: 3;">Project</a></li>
+                <li class="group-flex"><a href="/index.html" class="text-base px-4  mt-4 text-slate-900 hover:text-white transition-all duration-100" style="line-height: 3;">Pembelian</a></li>
+                 <li class="group-flex"><a href="/index.html" class="text-base px-4  text-slate-900 hover:text-white transition-all duration-100" style="line-height: 3;">Feedback client</a></li>
+                <li class="group-flex"><a href="/index.html" class="text-base px-4 text-slate-900 hover:text-white transition-all duration-100" style="line-height: 3;">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Home -->
+    <section class="pt-16 px-6 bg-slate-200 pb-16">
+        <div class="flex justify-between items-center " data-aos="fade-up" data-aos-duration="450" data-aos-delay="100">
+            <h1 class="font-bold text-3xl md:text-7xl">BRITZ TOP <br>RESIDENCE</h1>
+        </div>
+        <img src="/img/house3.jpg" alt="" class="pt-16 mx-auto rounded-md " data-aos="fade-up" data-aos-duration="450" data-aos-delay="100"> 
+        <div class="md:flex md:justify-center pt-10 text-slate-500 sm:px-3 sm:gap-6">
+            <p class="pb-4 sm:w-[50%] text-sm sm:text-xl">Dengan pemandangan gedung-gedung tinggi di sekitarnya, townhouse bertingkat ini terlihat rapi dan modern dan sangat cocok untuk keluarga kecil atau pasangan yang bekerja. Terletak dekat dengan jalan raya terdekat, Britz Top terpencil dan terhubung dengan baik pada saat yang bersamaan.<p>
+
+            <p class="sm:w-[50%] text-sm sm:text-xl">Setiap properti dilengkapi dengan taman, dapur modern lengkap, serta perabotan dan interior yang dibuat khusus. Anda dapat memilih dari berbagai solusi pencahayaan yang dibuat khusus untuk sebagian besar ruang keluarga, dan memiliki akses ke layanan berkebun dan pembersihan perumahan. Lingkungan tinggal yang tenang memiliki nuansa yang sangat erat, membuat Anda merasa seperti di rumah dalam sekejap.</p>
+        </div>
+
+        <div class="sm:flex sm:justify-between pt-10 sm:gap-7" data-aos="fade-up" data-aos-duration="450" data-aos-delay="100">
+            <img src="/img/livroom2.jpg" alt="" class="sm:[w-400px] sm:h-[300px] sm:mx-auto">
+            <div class="sm:w-[50%] pt-5 text-justify">
+                <h2 class="font-bold text-2xl sm:text-3xl pb-5">DETAIL</h2>
+                <p class="pb-4">Kamar tidur<br><strong>2</strong></p>
+                <p class="pb-4">Luas<br><strong>10x16 m</strong></p>
+                <p class="pb-4">Tahun dibangun<br><strong>2020</strong></p>
+                <br>
+                <p class="text-slate-600 text-xl sm:text-2xl">
+                    Rp.200.000.000
+                </p>
+            </div>
+        </div>
+        <div class="w-full sm:flex sm:justify-center sm:gap-8 px-4 sm:px-9 pt-16 md:pt-24">
+            <img src="/img/broom2.jpg" alt="" class="pb-9">
+            <img src="/img/kitchen2.jpg" alt="">
+        </div>
+    </section>
+    <!-- Home end -->
+    
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <script>
+        feather.replace()
+    </script>
+    <script src="/script.js"></script>
+</body>
+</html>
